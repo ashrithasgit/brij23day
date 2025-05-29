@@ -96,7 +96,7 @@ updateFog();
 
 // Add music player
 const musicPlayer = document.createElement('audio');
-musicPlayer.src = '/music/the_loner.mp3';
+musicPlayer.src = './music/the_loner.mp3';
 musicPlayer.loop = true;
 musicPlayer.volume = 0.5;
 
@@ -244,7 +244,7 @@ let cake = null;
 
 // Load cake model
 const loader = new GLTFLoader();
-loader.load('/models/cake.glb', (gltf) => {
+loader.load('./models/cake.glb', (gltf) => {
   cake = gltf.scene;
 
   // Smooth shading and shadows
@@ -408,7 +408,7 @@ function createGiftBox() {
   
   // Load gift box model
   const loader = new GLTFLoader();
-  loader.load('/models/gift_box_4.glb', (gltf) => {
+  loader.load('./models/gift_box_4.glb', (gltf) => {
     const giftBox = gltf.scene;
     
     // Smooth shading and shadows
@@ -451,7 +451,7 @@ function createVinyl() {
   
   // Load vinyl model
   const loader = new GLTFLoader();
-  loader.load('/models/12_vinyl_record.glb', (gltf) => {
+  loader.load('./models/12_vinyl_record.glb', (gltf) => {
     const vinyl = gltf.scene;
     
     // Smooth shading and shadows
@@ -497,7 +497,7 @@ function createLetter() {
   
   // Load envelope model
   const loader = new GLTFLoader();
-  loader.load('/models/envelope.glb', (gltf) => {
+  loader.load('./models/envelope.glb', (gltf) => {
     const envelope = gltf.scene;
     
     // Smooth shading and shadows
