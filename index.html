@@ -1,12 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;url=cake.html">
-    <title>Redirecting...</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!!!</title>
+  <style>
+    @font-face {
+      font-family: "Roomach";
+      src: url("./Roomach-Regular.woff2") format("woff2"),
+           url("./Roomach-Regular.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+  <link rel="stylesheet" href="./src/style.css" />
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="cake.html">click here</a>.</p>
+  <div class="container">
+    <h1 id="headline">Countdown to Brijraj's birthday</h1>
+    <div id="countdown">
+      <ul>
+        <li>
+          <span id="days"></span>
+          <div class="label">Days</div>
+        </li>
+        <li>
+          <span id="hours"></span>
+          <div class="label">Hours</div>
+        </li>
+        <li>
+          <span id="minutes"></span>
+          <div class="label">Minutes</div>
+        </li>
+        <li>
+          <span id="seconds"></span>
+          <div class="label">Seconds</div>
+        </li>
+      </ul>
+    </div>
+    <div id="age-buttons" style="display: none; gap: 2rem;">
+      <button id="age-22-btn">22</button>
+      <button id="age-23-btn">23</button>
+    </div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
 </body>
-</html> 
+</html>
+
+

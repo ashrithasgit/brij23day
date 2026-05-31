@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# If you want all requests to still return an HTML page,
+# uncomment the following redirect rule.
+#[[redirects]]
+#  from = "/*"
+#  to = "/index.html"
+#  status = 200
